@@ -1,203 +1,213 @@
 1.Inicio
 
 2.funcion principal()
-3.numero, int[0-n]
-4.confirma, x(20)[{A-Z}, {a-z}, {BS}] <-- "si"
-5.cuentas, i[0-n] <-- 0
+	3.numero, int[0-n]
+	4.confirma, x(20)[{A-Z}, {a-z}, {BS}] <-- "si"
+	5.cuentas, i[0-n] <-- 0
 
-6.Mientras (confirma = "si")
-7.Escribir "Ingrese 1-Facebook, 2-Twitter, 3-Whatsapp, 4-Telegram, 5-Signal, 6-Instagram, 7-Flickr"
-8.Obtener numero
+	6.Mientras (confirma = "si")
+		7.Escribir "Ingrese 1-Facebook, 2-Twitter, 3-Whatsapp, 4-Telegram, 5-Signal, 6-Instagram, 7-Flickr"
+		8.Obtener numero
 
-9.Si (numero < 1 OR numero > 7) entonces
-	10.Escribir "error en opcion seleccionada"
-11.Caso contrario
-	12.Si (numero = 1) entonces
-		13.funcion crearFacebook
-	14.Caso contrario
-		15.Si (numero = 2) entonces
-			16.funcion crearTwitter
-		17.Caso contrario
-			18.Si (numero = 3) entonces
-				19.funcion crearTelegram
-			20.Caso contrario
-				21.Si (numero = 4) entonces
-					22.funcion crearSignal
-				23.Caso contrario
-					24.Si (numero = 5) entonces
-						25.funcion crearInstagram
-					26.Caso contrario
-						27.Si (numero = 6) entonces
-							28.funcion crearFlickr
-29.fin Si
+		9.Si (numero < 1 OR numero > 7) entonces
+		10.Escribir "error en opcion seleccionada"
+		11.Caso contrario
+			12.Si (numero = 1) entonces
+				13.crearFacebook
+			14.Caso contrario
+				15.Si (numero = 2) entonces
+					16.crearTwitter
+				17.Caso contrario
+					18.Si (numero = 3) entonces
+						19.crearTelegram
+					20.Caso contrario
+						21.Si (numero = 4) entonces
+							22.crearSignal
+						23.Caso contrario
+							24.Si (numero = 5) entonces
+								25.crearInstagram
+							26.Caso contrario
+								27.Si (numero = 6) entonces
+								28.crearFlickr
+							29.Fin Si
+						30.Fin Si
+					31.Fin Si
+				32.Fin Si
+			33.Fin Si
+		34.Fin Si
 
-30.cuentas = cuentas + 1
-31.Escribir "Si desea seguir añadiendo cuentas ingrese "si", caso contrario ingrese "no""
-32.Obtener confirma
-33.Fin Mientras
+		
+		35.Escribir "Si desea seguir añadiendo cuentas ingrese "si", caso contrario ingrese "no""
+		36.Obtener confirma
+		37.Si (confirma = "si")
+			38.cuentas = cuentas + 1
+		39.Fin Si
+	40.Fin Mientras
 
-34.obtenerMensaje(cuentas)
+	41.obtenerMensaje(cuentas)
 
-35.fin funcion principal
+42.fin funcion principal
 
-36.funcion crearFacebook()
-37.nombre, x(60)[{A-Z}, {a-z}, {BS}]
-38.edad, i[0-n]
-39.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
-40.pais, x(20)[{A-Z}, {a-z}, {BS}]
-41.correo, x(20)[{A-Z}, {a-z}, {BS}]
+43.funcion crearFacebook()
+	44.nombre, x(60)[{A-Z}, {a-z}, {BS}]
+	45.edad, i[0-n]
+	46.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
+	47.pais, x(20)[{A-Z}, {a-z}, {BS}]
+	48.correo, x(20)[{A-Z}, {a-z}, {BS}]
 
-42.Escribir "Ingrese su nombre de usuario"
-43.Obtener nombre
-44.Escribir "Ingrese su edad"
-45.Obtener edad
-46.Escribir "Ingrese si ciudad"
-47.Obtener ciudad
-48.Escribir "Ingrese su país"
-49.Obtener pais
-50.Escribir "Ingrese su correo electrónico"
-51.Obtener correo
+	49.Escribir "Ingrese su nombre de usuario"
+	50.Obtener nombre
+	51.Escribir "Ingrese su edad"
+	52.Obtener edad
+	53.Escribir "Ingrese si ciudad"
+	54.Obtener ciudad
+	55.Escribir "Ingrese su país"
+	56.Obtener pais
+	57.Escribir "Ingrese su correo electrónico"
+	58.Obtener correo
 
-52.Escribir ("Datos de la cuenta (Facebook)\n Nombre de usuario: %s\n Edad: %d\n Ciudad: %s\n País: %s\n Correo electrónico: %s\n", nombre, edad, ciudad, pais, correo)
-53.fin funcion crearFacebook
+	59.Escribir ("Datos de la cuenta (Facebook)\n Nombre de usuario: %s\n Edad: %d\n Ciudad: %s\n País: %s\n Correo electrónico: %s\n", nombre, edad, ciudad, pais, correo)
+60.fin funcion crearFacebook
 
-54.funcion crearTwitter()
-55.nombre, x(20)[{A-Z}, {a-z}, {BS}]
-56.edad, i[0-n]
-57.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
-58.pais, x(30)[{A-Z}, {a-z}, {BS}]
-59.idioma, x(30)[{A-Z}, {a-z}, {BS}]
-60.nombres, x(50)[{A-Z}, {a-z}, {BS}]
-61.apellidos, x(50)[{A-Z}, {a-z}, {BS}]
-62.correo, x(40)[{A-Z}, {a-z}, {BS}]
+61.funcion crearTwitter()
+	62.nombre, x(20)[{A-Z}, {a-z}, {BS}]
+	63.edad, i[0-n]
+	64.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
+	65.pais, x(30)[{A-Z}, {a-z}, {BS}]
+	66.idioma, x(30)[{A-Z}, {a-z}, {BS}]
+	67.nombres, x(50)[{A-Z}, {a-z}, {BS}]
+	68.apellidos, x(50)[{A-Z}, {a-z}, {BS}]
+	69.correo, x(40)[{A-Z}, {a-z}, {BS}]
 
-63.Escribir "Ingrese su nombre de usuario"
-64.Obtener nombre
-64.Escribir "Ingrese sus nombres"
-65.Obtener nombres
-66.Escribir "Ingrese sus apellidos"
-67.Obtener apellidos
-68.Escribir "Ingrese su edad"
-69.Obtener edad
-70.Escribir "Ingrese su ciudad"
-71.Obtener ciudad
-72.Escribir "Ingrese su país"
-73.Obtener pais
-74.Escribir "Igrese su idioma"
-75.Obtener idioma
-76.Escribri "Ingrese su correo electrónico"
-77.Obtener correo
+	70.Escribir "Ingrese su nombre de usuario"
+	71.Obtener nombre
+	72.Escribir "Ingrese sus nombres"
+	73.Obtener nombres
+	74.Escribir "Ingrese sus apellidos"
+	75.Obtener apellidos
+	76.Escribir "Ingrese su edad"
+	77.Obtener edad
+	78.Escribir "Ingrese su ciudad"
+	79.Obtener ciudad
+	80.Escribir "Ingrese su país"
+	81.Obtener pais
+	82.Escribir "Igrese su idioma"
+	83.Obtener idioma
+	84.Escribri "Ingrese su correo electrónico"
+	85.Obtener correo
 
-78.Escribir ("\nDatos de la cuenta (Twitter)\n Nombre de usuario: %s\n Nombres: %s\n Apellidos: %s\n Edad: %d\n Ciudad: %s\n País: %s\n Idioma: %s\n Correo electrónico: %s\n", nombre, nombres, apellidos, edad, ciudad, pais, idioma, correo)
-79.fin funcion crearTwitter
+	86.Escribir ("\nDatos de la cuenta (Twitter)\n Nombre de usuario: %s\n Nombres: %s\n Apellidos: %s\n Edad: %d\n Ciudad: %s\n País: %s\n Idioma: %s\n Correo electrónico: %s\n", nombre, nombres, apellidos, edad, ciudad, pais, idioma, correo)
+87.fin funcion crearTwitter
 
-80.funcion crearWhatsapp()
-81.nombre, x(20)[{A-Z}, {a-z}, {BS}]
-82.telefono, i[0-n]
-83.edad, i[0-n]
-84.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
-85.pais, x(30)[{A-Z}, {a-z}, {BS}]
+88.funcion crearWhatsapp()
+	89.nombre, x(20)[{A-Z}, {a-z}, {BS}]
+	90.telefono, i[0-n]
+	91.edad, i[0-n]
+	92.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
+	93.pais, x(30)[{A-Z}, {a-z}, {BS}]
 
-86.Escribir "Ingrese su nombre de usuario"
-87.Obtener nombre
-88.Escribir "Ingrese su número de teléfono"
-89.Obtener telefono
-90.Escribir "Ingrese su edad"
-91.Obtener edad
-92.Escribir "Ingrese su ciudad"
-93.Obtener ciudad
-94.Escribir "Ingrese su país"
-95.Obtener pais
+	94.Escribir "Ingrese su nombre de usuario"
+	95.Obtener nombre
+	96.Escribir "Ingrese su número de teléfono"
+	97.Obtener telefono
+	98.Escribir "Ingrese su edad"
+	99.Obtener edad
+	100.Escribir "Ingrese su ciudad"
+	101.Obtener ciudad
+	102.Escribir "Ingrese su país"
+	103.Obtener pais
 
-96.Escribir ("\nDatos de la cuenta (Whatsapp)\n Nombre de usuario: %s\n Número de teléfono: %d\n Edad: %d\n Ciudad: %s\n País: %s\n", nombre, numero, edad, ciudad, pais)
-97.fin funcion crearWhatsapp
+	104.Escribir ("\nDatos de la cuenta (Whatsapp)\n Nombre de usuario: %s\n Número de teléfono: %d\n Edad: %d\n Ciudad: %s\n País: %s\n", nombre, numero, edad, ciudad, pais)
+105.fin funcion crearWhatsapp
 
-98.funcion crearTelegram()
-99.nombre, x(20)[{A-Z}, {a-z}, {BS}]
-100.telefono, i[0-n]
-101.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
-102.pais, x(30)[{A-Z}, {a-z}, {BS}]
-103.area, x(50)[{A-Z}, {a-z}, {BS}]
+106.funcion crearTelegram()
+	107.nombre, x(20)[{A-Z}, {a-z}, {BS}]
+	108.telefono, i[0-n]
+	109.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
+	110.pais, x(30)[{A-Z}, {a-z}, {BS}]
+	111.area, x(50)[{A-Z}, {a-z}, {BS}]
 
-104.Escribir "Ingrese su nombre de usuario"
-105.Obtener nombre
-106.Escribir "Ingrese su número de teléfono"
-107.Obtener telefono
-108.Escribir "Ingrese su ciudad"
-109.Obtener ciudad
-110.Escribir "Ingrese su país"
-111.Obtener pais
-112.Escribir "Ingrese su área de interés"
-113.Obtener area
+	112.Escribir "Ingrese su nombre de usuario"
+	113.Obtener nombre
+	114.Escribir "Ingrese su número de teléfono"
+	115.Obtener telefono
+	116.Escribir "Ingrese su ciudad"
+	117.Obtener ciudad
+	118.Escribir "Ingrese su país"
+	119.Obtener pais
+	120.Escribir "Ingrese su área de interés"
+	121.Obtener area
 
-114.Escribir ("\nDatos de la cuenta (Telegram)\n Nombre de usuario: %s\n Número de teléfono: %d\n Ciudad: %s\n País: %s\n Área de interés: %s\n", nombre, numero, ciudad, pais, area)
-115.fin funcion crearTelegram
+	122.Escribir ("\nDatos de la cuenta (Telegram)\n Nombre de usuario: %s\n Número de teléfono: %d\n Ciudad: %s\n País: %s\n Área de interés: %s\n", nombre, numero, ciudad, pais, area)
+123.fin funcion crearTelegram
 
-116.funcion crearSignal()
-117.nombre, x(20)[{A-Z}, {a-z}, {BS}]
-118.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
-119.edad, i[0-n]
-120.correo, x(50)[{A-Z}, {a-z}, {BS}]
+124.funcion crearSignal()
+	125.nombre, x(20)[{A-Z}, {a-z}, {BS}]
+	126.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
+	127.edad, i[0-n]
+	128.correo, x(50)[{A-Z}, {a-z}, {BS}]
 
-121.Escribir "Ingrese su nombre de usuario"
-123.Obtener nombre
-124.Escribir "Ingrese su número de teléfono"
-125.Obtener telefono
-126.Escribir "Ingrese su ciudad"
-127.Obtener ciudad
-128.Escribir "Ingrese su país"
-129.Obtener pais
-130.Escribir "Ingrese su correo hobby principal"
-131.Obtener hobby
+	129.Escribir "Ingrese su nombre de usuario"
+	130.Obtener nombre
+	131.Escribir "Ingrese su número de teléfono"
+	132.Obtener telefono
+	133.Escribir "Ingrese su ciudad"
+	134.Obtener ciudad
+	135.Escribir "Ingrese su país"
+	136.Obtener pais
+	137.Escribir "Ingrese su correo hobby principal"
+	138.Obtener hobby
 
-132.Escribir ("\nDatos de la cuenta (Signal)\n Nombre de usuario: %s\n Número de teléfono: %d\n Ciudad: %s\n País: %s\n Hobby principal: %s\n", nombre, numero, ciudad, pais, hobby)
-133.fin funcion crearSignal
+	139.Escribir ("\nDatos de la cuenta (Signal)\n Nombre de usuario: %s\n Número de teléfono: %d\n Ciudad: %s\n País: %s\n Hobby principal: %s\n", nombre, numero, ciudad, pais, hobby)
+140.fin funcion crearSignal
 
-134.funcion crearInstagram()
-135.nombre, x(20)[{A-Z}, {a-z}, {BS}]
-136.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
-137.pais, x(30)[{A-Z}, {a-z}, {BS}]
-138.correo, x(50)[{A-Z}, {a-z}, {BS}]
+141.funcion crearInstagram()
+	142.nombre, x(20)[{A-Z}, {a-z}, {BS}]
+	143.ciudad, x(40)[{A-Z}, {a-z}, {BS}]
+	144.pais, x(30)[{A-Z}, {a-z}, {BS}]
+	145.correo, x(50)[{A-Z}, {a-z}, {BS}]
 
-139.Escribir "Ingrese su nombre de usuario"
-140.Obtener nombre
-141.Escribir "Ingrese su ciudad"
-142.Obtener ciudad
-143.Escribir "Ingrese su edad"
-144.Obtener edad
-145.Escribir "Ingrese su correo electrónico"
-146.Obtener correo
+	146.Escribir "Ingrese su nombre de usuario"
+	147.Obtener nombre
+	148.Escribir "Ingrese su ciudad"
+	149.Obtener ciudad
+	150.Escribir "Ingrese su edad"
+	151.Obtener edad
+	152.Escribir "Ingrese su correo electrónico"
+	153.Obtener correo
 
-147.Escribir ("\nDatos de la cuenta (Instagram)\n Nombre de usuario: %s\n Ciudad: %s\n Edad: %d\n Correo electrónico: %s\n", nombre, ciudad, edad, correo)
-148.fin funcion crearInstagram
+	154.Escribir ("\nDatos de la cuenta (Instagram)\n Nombre de usuario: %s\n Ciudad: %s\n Edad: %d\n Correo electrónico: %s\n", nombre, ciudad, edad, correo)
+155.fin funcion crearInstagram
 
-149.funcion crearFlickr()
-150.nombre, x(20)[{A-Z}, {a-z}, {BS}]
-151.correo, x(50)[{A-Z}, {a-z}, {BS}]
+156.funcion crearFlickr()
+	157.nombre, x(20)[{A-Z}, {a-z}, {BS}]
+	158.correo, x(50)[{A-Z}, {a-z}, {BS}]
 
-152.Escribir "Ingrese su nombre de usuario"
-153.Obtener nombre
-154.Escribir "Ingrese su correo electrónico"
-155.Obtener correo
+	159.Escribir "Ingrese su nombre de usuario"
+	160.Obtener nombre
+	161.Escribir "Ingrese su correo electrónico"
+	162.Obtener correo
 
-156.Escribir ("\nDatos de la cuenta (Flickr)\n Nombre de usuario: %s\n Correo electrónico: %s\n", nombre, correo)
-157.fin funcion crearFlickr
+	163.Escribir ("\nDatos de la cuenta (Flickr)\n Nombre de usuario: %s\n Correo electrónico: %s\n", nombre, correo)
+164.fin funcion crearFlickr
 
-158.funcion obtenerMensaje(a, i) : i
+165.funcion obtenerMensaje(a, i) : i
 
-159.mensajeFinal(3),x(300)[{a-z}, {A-Z}, {BS}]
-160.mensajeFinal <-- {"Campaña con poca afluencia", "Campaña moderada siga adelante", "Excelente campaña"}
+	166.mensajeFinal(3),x(300)[{a-z}, {A-Z}, {BS}]
+	167.mensajeFinal <-- {"Campaña con poca afluencia", "Campaña moderada siga adelante", "Excelente campaña"}
 
-161.Si (a > 0 AND a < 6) entonces
-	162.Escribir mensajeFinal[0]
-163.Caso contrario
-	164.Si (a > 5 AND a < 16) entonces
-		165.Escribir mensajeFinal[1]
-	166.Caso contrario
-		167.Si (a > 15) entonces
-			168.Escribir mensajeFinal[2]
-169.Fin Si
+	168.Si (a > 0 AND a < 6) entonces
+		169.Escribir mensajeFinal[0]
+	170.Caso contrario
+		171.Si (a > 5 AND a < 16) entonces
+			172.Escribir mensajeFinal[1]
+		173.Caso contrario
+			174.Si (a > 15) entonces
+				175.Escribir mensajeFinal[2]
+			176.Fin Si
+		177.Fin Si
+	178.Fin Si
 
-170.fin funcion obtenerMensaje
+179.fin funcion obtenerMensaje
 
-171.Fin
+180.Fin
