@@ -10,7 +10,7 @@
 		8.Obtener numero
 
 		9.Si (numero < 1 OR numero > 7) entonces
-		10.Escribir "error en opcion seleccionada"
+			10.Escribir "error en opcion seleccionada"
 		11.Caso contrario
 			12.Si (numero = 1) entonces
 				13.crearFacebook
@@ -28,7 +28,7 @@
 								25.crearInstagram
 							26.Caso contrario
 								27.Si (numero = 6) entonces
-								28.crearFlickr
+									28.crearFlickr
 							29.Fin Si
 						30.Fin Si
 					31.Fin Si
